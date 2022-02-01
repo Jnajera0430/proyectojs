@@ -7,7 +7,77 @@
     <title>Curso practico js en Platzi-Figuras geometricas </title>
 </head>
 <body>
-    <h1>Figuras geometricas</h1>
+    <header>
+        <h1>Figuras geometricas</h1>
+    </header>
+    <section>
+        <h2>Calcula el área y el perímetro de un cuadrado</h2>
+        <form action="">
+            <label for="">
+                Escribe cuanto mide cada lado de tu cuadrado:
+            </label>
+
+            <input id="InputCuadrado" type="number">
+
+            <button type="button" onclick="calcularPcuadrado()" >
+                Carcular el perímetro 
+            </button>
+
+            <button type="button" onclick="calcularAcuadrado()">
+                Calcular el área
+            </button>
+
+        </form>
+    </section>
+
+    <section>
+        <h2>Calcula el área y el perímetro de un triángulo</h2>
+        <form action="">
+            <label for="">
+                Escribe cuanto mide el primer lado del triangulo:
+            </label>
+
+            <input id="InputTriangulo1" type="number">
+
+            <label for="">
+                Escribe cuanto mide el segundo lado del triangulo:
+            </label>
+
+            <input id="InputTriangulo2" type="number">
+
+            <label for="">
+                Escribe cuanto mide el tercer lado del triangulo:
+            </label>
+
+            <input id="InputTriangulo3" type="number">
+
+            <button type="button" onclick="calcularPtriangulo()" >
+                Carcular el perímetro 
+            </button>
+
+           
+
+        </form>
+
+        <form action="">
+            <label for="">
+                Escribe cuanto mide el tercer lado del triangulo:
+            </label>
+
+            <input id="InputTriangulobase" type="number">
+            
+            <label for="">
+                Escribe cuanto mide el tercer lado del triangulo:
+            </label>
+
+            <input id="InputTriangulo4" type="number">
+
+            <button type="button" onclick="calcularAtriangulo()">
+                Calcular el área
+            </button>
+        </form>
+    </section>
+    
     <script src="./figuras.js"></script>
 </body>
 </html>

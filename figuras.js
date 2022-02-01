@@ -21,7 +21,7 @@ console.group("Triangulo");
 //const btriangulo = 4;
 
 function ptriangulo(lado1,lado2,base){
-    return lado1 + lado2 + base + " cm";
+    return lado1 + lado2 + base  ;
 }
 
 function Atriangulo(h,base){
@@ -31,3 +31,46 @@ function Atriangulo(h,base){
 //console.log("Los lados de un triangulo miden: "+ ltriangulo1 + "cm "+ ltriangulo2 + "cm "+ btriangulo + "cm ")
 
 console.groupEnd();
+
+//Interzccion con HTML
+
+function calcularPcuadrado(){
+    const input = document.getElementById("InputCuadrado");
+    const lcuadrado = input.value;
+    const perimetro = pcuadrado(lcuadrado);
+    alert(perimetro);
+}
+
+function calcularAcuadrado(){
+    const input = document.getElementById("InputCuadrado");
+    const lcuadrado = input.value;
+    const area = Acuadrado(lcuadrado);
+    alert(area);
+}
+
+function calcularPtriangulo(){
+    const input1 = document.getElementById("InputTriangulo1").value;
+    const lado1 = input1;
+
+    const input2= document.getElementById("InputTriangulo2").value;
+    const lado2 = input2;
+
+    const input3 = document.getElementById("InputTriangulo3").value;
+    const base = input3;
+
+    const perimetro = ptriangulo(lado1,lado2,base); 
+    
+    alert(perimetro);
+}
+
+function calcularAtriangulo(){
+    const input4 = document.getElementById("InputTriangulobase");
+    const base = input4.value;
+
+    const input5 = document.getElementById("InputTriangulo2");
+    const h = input5.value;
+
+    const area = Atriangulo(h,base);
+
+    alert(area);
+}
