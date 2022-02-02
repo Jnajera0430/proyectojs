@@ -82,9 +82,9 @@ function calcularAtriangulo(){
 }
 
 function calcularHtriangulo(){
-    const input6 = document.getElementById("InputTriangulo1").value;
-    const input7 = document.getElementById("InputTriangulo2").value;
-    const input8 = document.getElementById("InputTriangulo3").value;
+    const input6 = document.getElementById("InputTriangulo5").value;
+    const input7 = document.getElementById("InputTriangulo6").value;
+    const input8 = document.getElementById("InputTriangulo7").value;
 
     const lado1= input6;
     const lado2= input7;
@@ -93,9 +93,8 @@ function calcularHtriangulo(){
     if(lado1 == lado2){
         const h = hTriangulo(lado1,base);
         alert(h);
-    }else if(lado1 < lado2){
-        const E = "No es un triangulo isosceles";
-        alert(E);
+    }else{
+        alert("No es un triangulo isosceles");
     }
 
 }
