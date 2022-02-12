@@ -1,3 +1,9 @@
+html{
+    font-size: 62.5%;
+
+}
+
+
 *{
     box-sizing: border-box;
     padding:0%;
@@ -5,11 +11,36 @@
 }
 
 main{
-    width: 100%;
-    height: 500px;
-    border: 0.5em solid aqua;
-    padding: 0%;
+    width: 80%;
+    height: auto;
+    max-width: 500px;
+    min-width: 320px;
+    max-height: 100%;
+    min-height: 500px;
+    border: 0.5rem solid aqua;
+    padding: 0;
+    margin: 0 auto;
 
+}
+
+header{
+    width: 80%;
+    max-width: 500px;
+    min-width: 320px;
+    min-height: 8rem;
+    border: 0.5rem solid aqua;
+    padding: 0%;
+    margin: 0 auto;
+}
+
+footer{
+    width: 80%;
+    max-width: 500px;
+    min-width: 320px;
+    min-height: auto;
+    border:  solid aqua;
+    padding: 0%;
+    margin: 0 auto;
 }
 
 
@@ -30,18 +61,21 @@ img{
 }
 
 .header-nav__item a{
-    color: white;
-    background-color: aqua;
+    color: black ;
+  
     padding: 5px;
-    border-radius: 2px;
+    
     text-decoration: none;
 }
 
 .header-nav__item a:hover{
     color: blue;
+    border-radius: 2px;
+    background-color: aqua;
 }
 .header-nav__item a:active{
-    color: tomato;
+    color: white;
+    background-color:tomato;
 }
 
 .header-nav__item a::after{
@@ -49,6 +83,11 @@ img{
 }
 
 .title{
-    font-size: 22px;
+    font-size: 4.2rem;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+main .main-ul{
+    width: 80%;
+    margin: 0 auto;
 }
